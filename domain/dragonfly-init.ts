@@ -11,7 +11,7 @@ import shell from 'shelljs';
 export async function dragonflyInit(dirName: string, options: DragonfyInitOptions) {
   const spinner = ora('');
   if (!dirName && !options.directory) {
-    console.warn(chalk.red('无法获取项目名称，请提供期望的项目名称：dgf init <projectName>'));
+    console.warn(chalk.red('无法获取项目名称，请提供期望的项目名称：dc init <projectName>'));
     return;
   }
   const projectPath = options.directory || path.resolve(process.cwd(), path.join('.', dirName));
