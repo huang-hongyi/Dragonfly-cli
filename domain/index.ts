@@ -1,8 +1,8 @@
 import { program } from 'commander';
 import packageJson from '../package.json';
 import { dragonflyInit } from './dragonfly-init';
+import { dragonflyBuild } from './dragonfly-build';
 
-console.log('yes');
 program.version(`Dragonfly-cli ${packageJson.version}`).usage('<命令名称> [参数]');
 
 program
@@ -15,6 +15,13 @@ program
     dragonflyInit(dirName, options);
   });
 
-(function() {
+ program
+  .command('build')
+  .option('--ignore', '忽略build文件强校验')
+  .action(({ignore}) => {
+    dragonflyBuild(ignore);
+  });
+
+(function exec() {
   program.parse(process.argv);
 })();
