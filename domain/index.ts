@@ -2,6 +2,7 @@ import { program } from 'commander';
 import packageJson from '../package.json';
 import { dragonflyInit } from './dragonfly-init';
 import { dragonflyBuild } from './dragonfly-build';
+import { dragonflyStart } from './dragonfly-start';
 
 program.version(`Dragonfly-cli ${packageJson.version}`).usage('<命令名称> [参数]');
 
@@ -20,6 +21,12 @@ program
   .option('--ignore', '忽略build文件强校验')
   .action(({ignore}) => {
     dragonflyBuild(ignore);
+  });
+
+program
+  .command('start')
+  .action(() => {
+    dragonflyStart();
   });
 
 (function exec() {
