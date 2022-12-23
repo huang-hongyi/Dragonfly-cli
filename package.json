@@ -1,6 +1,6 @@
 {
   "name": "@dragonfly-js/cli",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Huawei DevUI前端脚手架",
   "bin": {
     "dc": "bin/dragonfly.js"
@@ -9,7 +9,7 @@
     "start": "tsc -p . -w",
     "prebuild": "npm run copyfile",
     "build": "tsc -p .",
-    "copyfile": "rm -rf dist && mkdir dist && cp -r ./bin ./dist/",
+    "copyfile": "rm -rf dist && mkdir dist && cp -r ./bin README.md ./dist/",
     "eslint": "npx eslit . --ext ts --ignore-path .gitignore",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
