@@ -21,10 +21,9 @@ export async function dragonflyInit(dirName: string, options: DragonfyInitOption
   downloadFile(packageUrl, projectPath)
     .then(() => {
       spinner.succeed(chalk.cyan(`项目已下载至: ${projectPath}`));
-      console.log(chalk.cyan(`开启调试`));
-      console.log(chalk.cyan(`cd ${projectPath}`));
-      console.log(chalk.cyan(`npm install`));
-      console.log(chalk.cyan(`npm run start`));
+      console.warn('进入项目中执行以下命令开启调试： ');
+      console.log(chalk.cyan('npm install'));
+      console.log(chalk.cyan('npm run start'));
     })
     .catch((e) => {
       spinner.fail(chalk.red('初始化失败： '));
