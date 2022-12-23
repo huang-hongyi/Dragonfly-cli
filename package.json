@@ -1,6 +1,6 @@
 {
   "name": "@dragonfly-js/cli",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Huawei DevUI前端脚手架",
   "bin": {
     "dc": "bin/dragonfly.js"
