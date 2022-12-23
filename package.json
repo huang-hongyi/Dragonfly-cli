@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Huawei DevUI前端脚手架",
   "bin": {
-    "dgf": "bin/dragonfly.js"
+    "dc": "bin/dragonfly.js"
   },
   "scripts": {
     "start": "tsc -p . -w",
