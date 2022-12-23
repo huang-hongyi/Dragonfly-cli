@@ -1,6 +1,6 @@
 {
-  "name": "dragonfly-cli",
-  "version": "1.0.0",
+  "name": "@dragonfly-js/cli",
+  "version": "0.0.0",
   "description": "Huawei DevUI前端脚手架",
   "bin": {
     "dgf": "bin/dragonfly.js"
@@ -31,5 +31,14 @@
     "eslint": "^8.30.0",
     "prettier": "^2.8.1",
     "typescript": "^4.9.4"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huang-hongyi/Dragonfly-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/huang-hongyi/Dragonfly-cli/issues"
+  },
+  "homepage": "https://github.com/huang-hongyi/Dragonfly-cli#readme"
 }
